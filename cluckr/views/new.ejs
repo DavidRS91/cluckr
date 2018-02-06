@@ -1,0 +1,21 @@
+<%- include('./partials/header') %>
+
+<form class="new-cluck col-12" method="POST">
+
+
+  <div class="form-group text-muted">
+    <label for="exampleFormControlTextarea1">Content</label>
+    <textarea class="form-control" name="content"  placeholder="Whatchoo cluckin' 'bout?" rows="3"></textarea>
+  </div>
+
+  <div class="form-group text-muted">
+    <label for="exampleFormControlInput1">Image Url</label>
+    <input name="image_url" class="form-control" placeholder="https://i.imgur.com/DalZfsy.jpg">
+  </div>
+
+  <button type="submit" class="btn btn-outline-secondary">Submit</button>
+
+
+</form>
+
+<%- include('./partials/footer') %>

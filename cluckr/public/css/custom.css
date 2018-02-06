@@ -1,0 +1,31 @@
+.navbar {
+  background-color: white;
+  border-bottom: solid;
+  border-bottom-color: grey;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9;
+}
+
+.new-cluck {
+  border: solid;
+  border-color: grey;
+  border-radius: 5px;
+  border-width: 1px;
+  margin: 15px;
+  padding: 15px;
+}
+
+.container {
+  margin-top: 100px;
+}
+
+.card-body {
+  box-sizing: border-box;
+  display: flex;
+}
+.card-body {
+  display: flex;
+  flex-direction: row;
+}

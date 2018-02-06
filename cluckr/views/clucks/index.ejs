@@ -1,0 +1,20 @@
+<%- include('../partials/header') %>
+
+<div class="clucks-list text-muted">
+  <% for (let cluck of clucks) { %>
+    <div class="card p-3 m-2">
+      <div class="card-body">
+      <img src="images/squawk.png" style="width:50px;height:50px;border-radius:50px;"></img>
+      <div class="post-content col-10">
+        <p class="card-title"><strong><%= cluck.username %> • <%= timeElapsed(Date.now() - new Date(cluck.created_at)) %></strong></p>
+        <p class="card-text"><%= cluck.content %></p>
+        <img class="card-img-top" src="<%= cluck.image_url %>" />
+        </div>
+      </div>
+    </div>
+  <% } %>
+</div>
+
+
+
+<%- include('../partials/footer') %>

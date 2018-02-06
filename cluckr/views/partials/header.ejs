@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Cluckr</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/custom.css">
+    <script src="/js/jquery-3.2.1.slim.min.js" charset="utf-8"></script>
+    <script src="/js/popper.min.js" charset="utf-8"></script>
+    <script src="/js/bootstrap.min.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-fixed-top">
+      <a class="navbar-brand" href="/clucks"><img src="images/logo.jpg"  style="width:50px;height:50px;"></img></a>
+      <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      </button> -->
+        <span class="navbar-toggler-icon"></span>
+
+           <span class="navbar-text ml-auto"></span>
+
+           <form class="form-inline m-1" action="<%= (username)? "Sign_out" : "Sign_in" %>" method="<%= (username)? "POST" : "GET" %>">
+             <input type="submit" class="btn btn-light" value="<%= (username)? "Sign Out" : "Sign In" %>" />
+           </form>
+
+
+
+          <% if (username) {%>
+           <form class="form-inline m-1" action="/new" method="GET">
+             <input type="submit" class="btn btn-secondary" value="CLUCK!" />
+           </form>
+           <% } %>
+
+      </div>
+    </nav>
+
+    <div class="container">
